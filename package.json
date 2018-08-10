@@ -1,0 +1,34 @@
+{
+  "name": "simple-client-oauth1",
+  "version": "1.0.0",
+  "description": "Package that performs simple requests for an Oauth1 service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josembergff/simple-client-oauth1-npm.git"
+  },
+  "keywords": [
+    "client",
+    "oauth",
+    "oauth1",
+    "request",
+    "oauth",
+    "oauth",
+    "1"
+  ],
+  "author": "Josemberg Farias Ferreira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josembergff/simple-client-oauth1-npm/issues"
+  },
+  "homepage": "https://github.com/josembergff/simple-client-oauth1-npm#readme",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "oauth-1.0a": "^2.2.4",
+    "request": "^2.88.0"
+  }
+}
