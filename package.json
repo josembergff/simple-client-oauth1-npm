@@ -1,6 +1,6 @@
 {
   "name": "simple-client-oauth1",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Package that performs simple requests for an Oauth1 service.",
   "main": "index.js",
   "scripts": {

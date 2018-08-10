@@ -6,15 +6,15 @@ module.exports.GetReturnRequest = async (
   url,
   method,
   requestData,
-  comsumeKey,
-  comsumeKeySecret,
+  consumerKey,
+  consumerKeySecret,
   comsumeTokenKey,
   comsumeTokenKeySecret
 ) => {
   let oauth = OAuth({
     consumer: {
-      key: comsumeKey,
-      secret: comsumeKeySecret
+      key: consumerKey,
+      secret: consumerKeySecret
     },
     signature_method: "HMAC-SHA1",
     hash_function(base_string, key) {
@@ -50,6 +50,6 @@ module.exports.GetReturnRequest = async (
       }
     };
 
-    request(request_data, callback);
+    Request(request_data, callback);
   });
 };
