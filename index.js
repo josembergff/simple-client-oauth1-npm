@@ -43,7 +43,7 @@ module.exports.GetReturnRequest = async (
 
       console.error("body:", body);
 
-      if (err) {
+      if (error) {
         console.error("error:", error);
         reject(error);
       } else {
