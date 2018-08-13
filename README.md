@@ -4,25 +4,29 @@ Package that performs simple requests for an Oauth1 service.
 
 ## Install
 
-> npm install simple-client-oauth1 --save
+```bash
+ npm install --save simple-client-oauth1
+```
 
-## Usage
+## Example Usage
 
+```bash
 const simpleOauth = require("simple-client-oauth1");
 
-> simpleOauth.GetReturnRequest(<br/>
- > &nbsp; &nbsp; urlRequest,<br/>
- > &nbsp; &nbsp; methodRequest,<br/>
- > &nbsp; &nbsp; bodyRequest,<br/>
- > &nbsp; &nbsp; consumerKeyOauth,<br/>
- > &nbsp; &nbsp; consumerKeySecretOauth,<br/>
- > &nbsp; &nbsp; tokenKeyOauth,<br/>
- > &nbsp; &nbsp; tokenKeySecretOauth<br/>
- > &nbsp; ).then(data => { <br/>
- > &nbsp; &nbsp; console.log("body response:", data); <br/>
- > &nbsp; }).catch(e => { <br/>
- > &nbsp; &nbsp; console.error("error:", e); <br/>
-> });
+simpleOauth.GetReturnRequest(
+        urlRequest,
+        methodRequest,
+        bodyRequest,
+        consumerKeyOauth,
+        consumerKeySecretOauth,
+        tokenKeyOauth,
+        tokenKeySecretOauth
+    ).then(data => {
+        console.log("body response:", data);
+    }).catch(e => {
+        console.error("error:", e);
+});
+```
 
 ### Other language
 

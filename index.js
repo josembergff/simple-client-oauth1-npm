@@ -31,7 +31,7 @@ module.exports.GetReturnRequest = async (
     url: url,
     method: method,
     data: requestData,
-    headers: oauth.toHeader(oauth.authorize(request_data, token))
+    headers: oauth.toHeader(oauth.authorize(requestData, token))
   };
 
   return new Promise((resolve, reject) => {
