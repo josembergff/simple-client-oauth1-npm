@@ -27,12 +27,13 @@ module.exports.GetReturnRequest = async (
     secret: comsumeTokenKeySecret
   };
 
-  let request_data = {
+  const request_data = {
     url: url,
     method: method,
-    data: requestData,
-    headers: oauth.toHeader(oauth.authorize(requestData, token))
+    data: requestData
   };
+
+  request_data.headers = oauth.toHeader(oauth.authorize(request_data, token));
 
   return new Promise((resolve, reject) => {
     const callback = (error, response, body) => {
